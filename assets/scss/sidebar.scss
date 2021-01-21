@@ -1,0 +1,91 @@
+@import './default.scss';
+
+.sidebar__mobile {
+  display: none;
+  position: fixed;
+  width: 30px;
+  height: 33px;
+  z-index: 998;
+  left: 10px;
+  top: 70px;
+  opacity: 0.7;
+  cursor: pointer;
+  text-align: center;
+}
+.sidebar {
+  top: 86px;
+  background-color: #fff;
+  position: fixed;
+  width: 248px;
+  height: 100vh;
+  &__title {
+    font-size: 32px;
+    line-height: 41.41px;
+    color: #1f1f1f;
+    margin-top: 12px;
+    margin-left: 88px;
+  }
+  &__nav {
+    margin-top: 24px;
+    margin-left: 88px;
+  }
+  &__groups {
+    list-style: none;
+    padding: 0;
+  }
+  &__group {
+    margin-top: 17px;
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #959dad;
+    &:hover {
+      color: #59606d;
+      cursor: pointer;
+    }
+  }
+}
+.active {
+  color: #1f1f1f;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1439px) {
+  .sidebar {
+    width: 200px;
+  }
+  .sidebar__title {
+    margin-left: 50px;
+  }
+  .sidebar__nav {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .sidebar {
+    width: 150px;
+  }
+  .sidebar__title {
+    margin-left: 10px;
+  }
+  .sidebar__nav {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .sidebar {
+    z-index: 998;
+    right: 0;
+    width: 200px;
+    top: 65px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+  }
+  .sidebar__mobile {
+    display: block;
+  }
+}

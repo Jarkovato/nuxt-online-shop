@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "core-js": "^3.6.5",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.14.6",
+    "v-mask": "^2.2.3",
+    "vee-validate": "^2.2.15"
+  },
+  "devDependencies": {
+    "sass": "^1.32.4",
+    "sass-loader": "^10.1.1"
+  }
+}
